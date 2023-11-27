@@ -17,7 +17,7 @@ export class TareasManager {
     this.setArregloTareas();
   }
 
-  listaTareas (){
+  listarTareas (){
     this.listaTareas.innerHTML = ''
     this.arregloTareas.reverse().forEach((tarea) => {
         this.listaTareas.innerHTML += `
@@ -72,7 +72,7 @@ export class TareasManager {
 
   setArregloTareas(){
     localStorage.setItem("arregloTareas", JSON.stringify(this.arregloTareas));
-    this.listaTareas();
+    this.listarTareas();
   }
 
 }
